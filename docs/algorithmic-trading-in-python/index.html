@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Algorithmic Trading in Python</title>
+    <link rel="stylesheet" href="../assets/built/screen.css%3Fv=ed4f07f1c9.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
+
+    <script>
+        if (localStorage.getItem('alto_dark') == 'true') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+
+    <link rel="icon" href="../favicon.png" type="image/png" />
+    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="amp/index.html" />
+    
+    <meta property="og:site_name" content="Joe´s Blog and Projects" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Algorithmic Trading in Python" />
+    <meta property="og:description" content="One of Charlie Munger´s,  vice chairman of Berkshire Hathaway,  best-known quotes is: “The big money is not in the buying or selling, but in the waiting”, but is this actually the case? It&#x27;s a story as old as time, the average hedge fund can&#x27;t consistently beat the broad index" />
+    <meta property="og:url" content="https://joes-blog-and-projects.ghost.io/algorithmic-trading-in-python/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEzfHx0cmFkaW5nfGVufDB8fHx8MTYzMDIzMTAyMg&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000" />
+    <meta property="article:published_time" content="2021-08-26T17:00:42.000Z" />
+    <meta property="article:modified_time" content="2021-09-06T13:56:19.000Z" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Algorithmic Trading in Python" />
+    <meta name="twitter:description" content="One of Charlie Munger´s,  vice chairman of Berkshire Hathaway,  best-known quotes is: “The big money is not in the buying or selling, but in the waiting”, but is this actually the case? It&#x27;s a story as old as time, the average hedge fund can&#x27;t consistently beat the broad index" />
+    <meta name="twitter:url" content="https://joes-blog-and-projects.ghost.io/algorithmic-trading-in-python/" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEzfHx0cmFkaW5nfGVufDB8fHx8MTYzMDIzMTAyMg&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Johannes v. Grundherr" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="1333" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Joe´s Blog and Projects",
+        "url": "https://joes-blog-and-projects.ghost.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://joes-blog-and-projects.ghost.io/content/images/2021/08/android-chrome-512x512-3.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Johannes v. Grundherr",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://joes-blog-and-projects.ghost.io/content/images/2021/08/IMG-20200704-WA0000-1.jpg",
+            "width": 768,
+            "height": 1024
+        },
+        "url": "https://joes-blog-and-projects.ghost.io/author/johannes/",
+        "sameAs": []
+    },
+    "headline": "Algorithmic Trading in Python",
+    "url": "https://joes-blog-and-projects.ghost.io/algorithmic-trading-in-python/",
+    "datePublished": "2021-08-26T17:00:42.000Z",
+    "dateModified": "2021-09-06T13:56:19.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDEzfHx0cmFkaW5nfGVufDB8fHx8MTYzMDIzMTAyMg&ixlib=rb-1.2.1&q=80&w=2000",
+        "width": 2000,
+        "height": 1333
+    },
+    "description": "One of Charlie Munger´s,  vice chairman of Berkshire Hathaway,  best-known\nquotes is: “The big money is not in the buying or selling, but in the waiting”, \nbut is this actually the case?\n\nIt&#x27;s a story as old as time, the average hedge fund can&#x27;t consistently beat the\nbroad index funds like the S&amp;P500 or the NASDAQ100, but I think the keyword is\n&quot;average&quot;, Renaissance Technologies´ Medallion Fund for example did it.\nFor more then 20 years:\n\n[https://www.cash.ch/sites/default/files/public/uploads/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://joes-blog-and-projects.ghost.io/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 4.13" />
+    <link rel="alternate" type="application/rss+xml" title="Joe´s Blog and Projects" href="../rss/index.html" />
+    <script defer src="https://unpkg.com/@tryghost/portal@~1.8.0/umd/portal.min.js" data-ghost="https://joes-blog-and-projects.ghost.io/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CC28QPYKJ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CC28QPYKJ9');
+</script><style>:root {--ghost-accent-color: #2699a1;}</style>
+</head>
+
+<body class="post-template">
+    <div class="site">
+        <header class="site-header container">
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="burger hidden-lg hidden-xl"></div>
+            <a class="logo" href="../index.html">
+        <img class="logo-image" src="../content/images/2021/08/android-chrome-512x512-3.png" alt="Joe´s Blog and Projects">
+</a>            <div class="sep hidden-xs hidden-sm hidden-sm"></div>
+                <nav class="main-menu hidden-xs hidden-sm hidden-md">
+                    <ul class="nav-list u-plain-list">
+        <li class="menu-item menu-item-home"><a class="menu-item-link"
+                href="../index.html">Home</a></li>
+        <li class="menu-item menu-item-about"><a class="menu-item-link"
+                href="../about/index.html">About</a></li>
+</ul>
+                </nav>
+        </div>
+        <div class="navbar-right">
+            <div class="toggle-track">
+                <div class="toggle-moon"><i class="icon icon-brightness-2"></i></div>
+                <div class="toggle-sun"><i class="icon icon-white-balance-sunny"></i></div>
+                <div class="toggle-thumb"></div>
+            </div>
+        </div>
+    </div>
+</header>        <div class="site-content">
+            
+<div class="content-area">
+    <main class="site-main">
+            <article class="post single-post">
+                <header class="post-header big-title container medium">
+        <h1 class="post-title">Algorithmic Trading in Python</h1>
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2021-08-26">
+                            Aug 26, 2021
+                    </time>
+                </span>
+                <span class="post-meta-item post-meta-length">
+                    4 min read
+                </span>
+            </div>
+</header>                    <figure class="post-media container large">
+        <div class="u-placeholder horizontal">
+            <a class="post-image-link" href="index.html">
+                <img class="post-image lazyload u-object-fit"
+
+                    data-srcset="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEzfHx0cmFkaW5nfGVufDB8fHx8MTYzMDIzMTAyMg&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 400w, https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEzfHx0cmFkaW5nfGVufDB8fHx8MTYzMDIzMTAyMg&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 750w, https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEzfHx0cmFkaW5nfGVufDB8fHx8MTYzMDIzMTAyMg&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 960w, https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEzfHx0cmFkaW5nfGVufDB8fHx8MTYzMDIzMTAyMg&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 1140w, https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEzfHx0cmFkaW5nfGVufDB8fHx8MTYzMDIzMTAyMg&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 1920w"
+                    data-sizes="auto" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDEzfHx0cmFkaW5nfGVufDB8fHx8MTYzMDIzMTAyMg&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     alt="Algorithmic Trading in Python">
+            </a>
+        </div>
+
+                <figcaption>Photo by <a href="https://unsplash.com/@nampoh?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Maxim Hopman</a> / <a href="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Unsplash</a></figcaption>
+    </figure>
+                <div class="post-content kg-canvas u-text-format">
+                    <p>One of Charlie Munger´s,  vice chairman of Berkshire Hathaway,  best-known quotes is: <strong>“The big money is not in the buying or selling, but in the waiting”, </strong>but is this actually the case?</p><p>It's a story as old as time, the average hedge fund can't consistently beat the broad index funds like the S&amp;P500 or the NASDAQ100, but I think the keyword is "average", Renaissance Technologies´ Medallion Fund for example did it.<br>For more then 20 years:</p><figure class="kg-card kg-image-card kg-card-hascaption"><a href="https://www.cash.ch/sites/default/files/public/uploads/renaissance.jpg"><img src="../content/images/2021/08/image.png" class="kg-image" alt loading="lazy" width="643" height="513" srcset="../content/images/size/w600/2021/08/image.png 600w, ../content/images/2021/08/image.png 643w"></a><figcaption>Source: <a href="https://www.cash.ch/sites/default/files/public/uploads/renaissance.jpg">https://www.cash.ch/sites/default/files/public/uploads/renaissance.jpg</a></figcaption></figure><p><br>So how are they doing it? - Well, I wouldn't be here if I knew...<br>What this shows is that it is in fact possible to outperfom the market.</p><p><br><strong>So what's the strategy? -  Leveraging the optionsflow.</strong></p><h2 id="the-proof-of-concept">The Proof of Concept:</h2><p>Financial-wise, the biggest innovation of 2020 and 2021 in my view is the website <a href="https://unusualwhales.com/">Unusalwhales.com</a>, as it provides the pure and unfiltered optionsflow,<br>it makes spotting insider trades by Nancy Pelosi, for example, Speaker of the United States House of Representatives, easy: <a href="https://unusualwhales.com/i_am_the_senate/pelosi">https://unusualwhales.com/i_am_the_senate/pelosi</a></p><p><strong>But how can we use this data?</strong> </p><p>Well, we can spot unusual options by volume, strike and expiry, aside from a few other factors.:</p><figure class="kg-card kg-image-card kg-width-wide"><img src="../content/images/2021/08/Screenshot-2021-08-29-122735.png" class="kg-image" alt loading="lazy" width="1686" height="106" srcset="../content/images/size/w600/2021/08/Screenshot-2021-08-29-122735.png 600w, ../content/images/size/w1000/2021/08/Screenshot-2021-08-29-122735.png 1000w, ../content/images/size/w1600/2021/08/Screenshot-2021-08-29-122735.png 1600w, ../content/images/2021/08/Screenshot-2021-08-29-122735.png 1686w" sizes="(min-width: 1200px) 1200px"></figure><p>This call option, for example, has all the characteristics of an unusual option:<br>- Its on the Ask Side, meaning the buyer wanted to get the option as fast as possible<br>- Its  5.63% out of the money(strike is @$215 and the stockprice@ $203.54)<br>   this is not unusual by itself, but it expires in just seven days, meaning there's a   certain urgency.</p><hr><p><strong>A little oversimplified Crash-Course for options:</strong><br>If a call option is below its strike at expiry, here $215 on the 08/27/2021,<br>it expires worthless.</p><hr><h3 id="conclusion-of-the-alert">Conclusion of the Alert:</h3><p>Someone is willing to bet $652,138.00 that Nvidias´ stock rises by atleast 5.63% <br>in just 7 days. Was the "speculator" right?</p><p>See for yourself:</p><figure class="kg-card kg-image-card kg-width-wide"><img src="../content/images/2021/08/Screenshot-2021-08-29-124037.png" class="kg-image" alt loading="lazy" width="859" height="589" srcset="../content/images/size/w600/2021/08/Screenshot-2021-08-29-124037.png 600w, ../content/images/2021/08/Screenshot-2021-08-29-124037.png 859w"></figure><p>Malicious gossip has it that the "speculator" might have known of the DoE <br>Aurora supercomputer deal with Nvidia:<br><a href="https://www.tomshardware.com/news/nvidia-amd-polaris-supercomputer-department-of-energy">https://www.tomshardware.com/news/nvidia-amd-polaris-supercomputer-department-of-energy</a></p><hr><p><br>The morality of insider trading and making <strong>1200% profit</strong> in a week is not the question at hand, it being<strong> how we can spot and follow these high conviction bets?</strong></p><p><strong>There are a few Problems to overcome:</strong> the biggest one being the so called "Memestocks", for those, $AMC and $GME especially, a lot of small fishes i.e. "the dark side of retail" buys so many high risk options that they might look like a whale. So it's crucial to filter those stocks out.</p><p>Apart from that it's pretty straight forward, we search for high conviction, short term bets with favourably huge amounts of money behind it.</p><p></p><h2 id="the-test-environment">The Test Environment</h2><p></p><p>Since I am living in Germany, we can only follow call options since we can't short a stock, likewise we can only buy stocks, since in Europe the derivatives market is not as well regulated as in the US, therefore we can only lookup the isin of an option manually as of know.</p><p>We can stream the options data, but only the live one, not the historic data, making back testing almost impossible.<br></p><p>To paper trade the stocks, we will be using <a href="https://dashboard.lemon.markets/">lemon.markets</a>, a german API focused up-and-coming fintech startup. It even allows us to try different strategies with its "spaces" system, dividing the main account into many smaller ones:<br></p><figure class="kg-card kg-image-card"><img src="../content/images/2021/08/Screenshot-2021-08-29-131658.png" class="kg-image" alt loading="lazy" width="1876" height="886" srcset="../content/images/size/w600/2021/08/Screenshot-2021-08-29-131658.png 600w, ../content/images/size/w1000/2021/08/Screenshot-2021-08-29-131658.png 1000w, ../content/images/size/w1600/2021/08/Screenshot-2021-08-29-131658.png 1600w, ../content/images/2021/08/Screenshot-2021-08-29-131658.png 1876w" sizes="(min-width: 720px) 720px"></figure><p>Each Space has its own API key, as well as an portfolio, order and transaction overview. The API structure is also quite straight forward:</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="../content/images/2021/08/API_Structure.png" class="kg-image" alt loading="lazy" width="2000" height="2613" srcset="../content/images/size/w600/2021/08/API_Structure.png 600w, ../content/images/size/w1000/2021/08/API_Structure.png 1000w, ../content/images/size/w1600/2021/08/API_Structure.png 1600w, ../content/images/size/w2400/2021/08/API_Structure.png 2400w" sizes="(min-width: 720px) 720px"><figcaption>https://docs.lemon.markets/img/API_Structure.png</figcaption></figure><h2 id="the-results-as-of-09292021">The Results as of 09/29/2021:</h2><p>You win some you lose some, but overall, we made about 14%  in 3 weeks with ~40 trades, but this being such a small timeframe we will have to see how it goes from here. Since the charting function on lemon.markets is broken right now, showing only the last day, I cant provide a chart right now, but once it is fixed I will update this post. </p><p><br>BTW: The $NVDA call I analysed above, returned 11% as of today.<br></p>
+                </div>
+                <div class="container medium">
+                    <div class="share u-hover-wrapper">
+    <a class="share-item share-facebook u-hover-item"
+        href="https://www.facebook.com/sharer.php?u=https://joes-blog-and-projects.ghost.io/algorithmic-trading-in-python/" target="_blank" rel="noopener"><i
+            class="icon icon-facebook"></i></a>
+    <a class="share-item share-twitter u-hover-item"
+        href="https://twitter.com/intent/tweet?url=https://joes-blog-and-projects.ghost.io/algorithmic-trading-in-python/&text=Algorithmic%20Trading%20in%20Python" target="_blank" rel="noopener"><i
+            class="icon icon-twitter"></i></a>
+    <a class="share-item share-pinterest u-hover-item"
+        href="https://pinterest.com/pin/create/button/?url=https://joes-blog-and-projects.ghost.io/algorithmic-trading-in-python/&media=&description=Algorithmic%20Trading%20in%20Python"
+        target="_blank" rel="noopener" data-pin-do="none"><i class="icon icon-pinterest"></i></a>
+    <a class="share-item share-linkedin u-hover-item"
+        href="https://www.linkedin.com/shareArticle?mini=true&url=https://joes-blog-and-projects.ghost.io/algorithmic-trading-in-python/&title=Algorithmic%20Trading%20in%20Python"
+        target="_blank" rel="noopener"><i class="icon icon-linkedin"></i></a>
+    <a class="share-item share-reddit u-hover-item"
+        href="https://reddit.com/submit?url=https://joes-blog-and-projects.ghost.io/algorithmic-trading-in-python/&title=Algorithmic%20Trading%20in%20Python" target="_blank" rel="noopener"><i
+            class="icon icon-reddit"></i></a>
+    <a class="share-item share-tumblr u-hover-item"
+        href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://joes-blog-and-projects.ghost.io/algorithmic-trading-in-python/&title=Algorithmic%20Trading%20in%20Python"
+        target="_blank" rel="noopener"><i class="icon icon-tumblr"></i></a>
+    <a class="share-item share-vk u-hover-item"
+        href="http://vk.com/share.php?url=https://joes-blog-and-projects.ghost.io/algorithmic-trading-in-python/&title=Algorithmic%20Trading%20in%20Python" target="_blank" rel="noopener"><i
+            class="icon icon-vk"></i></a>
+    <a class="share-item share-pocket u-hover-item" href="https://getpocket.com/edit?url=https://joes-blog-and-projects.ghost.io/algorithmic-trading-in-python/"
+        target="_blank" rel="noopener"><i class="icon icon-pocket"></i></a>
+    <a class="share-item share-telegram u-hover-item"
+        href="https://t.me/share/url?url=https://joes-blog-and-projects.ghost.io/algorithmic-trading-in-python/&text=Algorithmic%20Trading%20in%20Python" target="_blank" rel="noopener"><i
+            class="icon icon-telegram"></i></a>
+</div>                        <section class="author">
+        <div class="author-image-placeholder u-placeholder">
+            <img class="author-image lazyload u-object-fit"
+                data-srcset="/content/images/size/w150/2021/08/IMG-20200704-WA0000-1.jpg"
+                src="../content/images/size/w150/2021/08/IMG-20200704-WA0000-1.jpg"
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="Johannes v. Grundherr">
+        </div>
+        <div class="author-wrapper">
+            <header class="author-header">
+                <div class="author-header-wrapper">
+                    <h4 class="author-name">Johannes v. Grundherr</h4>
+                    <div class="author-social">
+                        <a class="author-social-item author-more"
+                            href="../author/johannes/index.html">More posts</a>
+                    </div>
+                </div>
+            </header>
+            <div class="author-bio">Electrical Engineering Student @ FAU
+</div>
+                <div class="author-location">
+                    <i class="author-location-icon icon icon-map-marker"></i>
+                    Erlangen, Germany
+                </div>
+        </div>
+    </section>
+                </div>
+            </article>
+            <div class="navigation container medium">
+        <div class="navigation-item navigation-previous">
+            <a class="navigation-item-link button-arrow button-arrow-left" href="../project-nixie-clock/index.html">
+                <i class="button-arrow-icon icon icon-arrow-left"></i> Previous Post
+            </a>
+        </div>
+
+</div>                            </main>
+</div>
+        </div>
+        <footer class="site-footer container large">
+    <div class="copyright">
+        Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+    </div>
+
+    <a class="logo" href="../index.html">
+        <img class="logo-image" src="../content/images/2021/08/android-chrome-512x512-3.png" alt="Joe´s Blog and Projects">
+</a>
+    <div class="footer-social">
+        <a class="footer-social-item footer-social-item-rss"
+            href="https://feedly.com/i/subscription/feed/https://joes-blog-and-projects.ghost.io/rss/" target="_blank" rel="noopener"
+            aria-label="RSS">
+            <i class="icon icon-rss"></i>
+        </a>
+    </div>
+</footer>    </div>
+
+    <div class="dimmer"></div>
+
+    <div class="off-canvas">
+        <div class="canvas-close">
+            <i class="canvas-icon icon icon-window-close"></i>
+        </div>
+        <div class="mobile-menu"></div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
+    <script src="../assets/built/main.min.js%3Fv=ed4f07f1c9"></script>
+
+    
+
+    
+</body>
+
+</html>

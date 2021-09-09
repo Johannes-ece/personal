@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project: Local Butchers´ Menu</title>
+    <link rel="stylesheet" href="../assets/built/screen.css%3Fv=ed4f07f1c9.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
+
+    <script>
+        if (localStorage.getItem('alto_dark') == 'true') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+
+    <link rel="icon" href="../favicon.png" type="image/png" />
+    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="amp/index.html" />
+    
+    <meta property="og:site_name" content="Joe´s Blog and Projects" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Project: Local Butchers´ Menu" />
+    <meta property="og:description" content="So as most of you during the Pandemic, studying or working from home, I and especially my neighbors struggled with eating a healthy meal every day, since they were used to the canteen at work and hadn&#x27;t had the time to cook each day." />
+    <meta property="og:url" content="https://joes-blog-and-projects.ghost.io/project-local-butchers-menu/" />
+    <meta property="og:image" content="https://joes-blog-and-projects.ghost.io/content/images/2021/08/Screenshot-2021-08-26-161503-1.png" />
+    <meta property="article:published_time" content="2021-05-08T15:01:00.000Z" />
+    <meta property="article:modified_time" content="2021-09-06T14:02:34.000Z" />
+    <meta property="article:tag" content="React-Native" />
+    <meta property="article:tag" content="App" />
+    <meta property="article:tag" content="Webapp" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Project: Local Butchers´ Menu" />
+    <meta name="twitter:description" content="So as most of you during the Pandemic, studying or working from home, I and especially my neighbors struggled with eating a healthy meal every day, since they were used to the canteen at work and hadn&#x27;t had the time to cook each day." />
+    <meta name="twitter:url" content="https://joes-blog-and-projects.ghost.io/project-local-butchers-menu/" />
+    <meta name="twitter:image" content="https://joes-blog-and-projects.ghost.io/content/images/2021/08/Screenshot-2021-08-26-161503-1.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Johannes v. Grundherr" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="React-Native, App, Webapp" />
+    <meta property="og:image:width" content="2119" />
+    <meta property="og:image:height" content="1488" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Joe´s Blog and Projects",
+        "url": "https://joes-blog-and-projects.ghost.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://joes-blog-and-projects.ghost.io/content/images/2021/08/android-chrome-512x512-3.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Johannes v. Grundherr",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://joes-blog-and-projects.ghost.io/content/images/2021/08/IMG-20200704-WA0000-1.jpg",
+            "width": 768,
+            "height": 1024
+        },
+        "url": "https://joes-blog-and-projects.ghost.io/author/johannes/",
+        "sameAs": []
+    },
+    "headline": "Project: Local Butchers´ Menu",
+    "url": "https://joes-blog-and-projects.ghost.io/project-local-butchers-menu/",
+    "datePublished": "2021-05-08T15:01:00.000Z",
+    "dateModified": "2021-09-06T14:02:34.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://joes-blog-and-projects.ghost.io/content/images/2021/08/Screenshot-2021-08-26-161503-1.png",
+        "width": 2119,
+        "height": 1488
+    },
+    "keywords": "React-Native, App, Webapp",
+    "description": "So as most of you during the Pandemic, studying or working from home, I and especially my neighbors struggled with eating a healthy meal every day, since they were used to the canteen at work and hadn&#x27;t had the time to cook each day.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://joes-blog-and-projects.ghost.io/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 4.13" />
+    <link rel="alternate" type="application/rss+xml" title="Joe´s Blog and Projects" href="../rss/index.html" />
+    <script defer src="https://unpkg.com/@tryghost/portal@~1.8.0/umd/portal.min.js" data-ghost="https://joes-blog-and-projects.ghost.io/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CC28QPYKJ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CC28QPYKJ9');
+</script><style>:root {--ghost-accent-color: #2699a1;}</style>
+</head>
+
+<body class="post-template tag-react-native tag-app tag-webapp">
+    <div class="site">
+        <header class="site-header container">
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="burger hidden-lg hidden-xl"></div>
+            <a class="logo" href="../index.html">
+        <img class="logo-image" src="../content/images/2021/08/android-chrome-512x512-3.png" alt="Joe´s Blog and Projects">
+</a>            <div class="sep hidden-xs hidden-sm hidden-sm"></div>
+                <nav class="main-menu hidden-xs hidden-sm hidden-md">
+                    <ul class="nav-list u-plain-list">
+        <li class="menu-item menu-item-home"><a class="menu-item-link"
+                href="../index.html">Home</a></li>
+        <li class="menu-item menu-item-about"><a class="menu-item-link"
+                href="../about/index.html">About</a></li>
+</ul>
+                </nav>
+        </div>
+        <div class="navbar-right">
+            <div class="toggle-track">
+                <div class="toggle-moon"><i class="icon icon-brightness-2"></i></div>
+                <div class="toggle-sun"><i class="icon icon-white-balance-sunny"></i></div>
+                <div class="toggle-thumb"></div>
+            </div>
+        </div>
+    </div>
+</header>        <div class="site-content">
+            
+<div class="content-area">
+    <main class="site-main">
+            <article class="post tag-react-native tag-app tag-webapp single-post">
+                <header class="post-header big-title container medium">
+        <h1 class="post-title">Project: Local Butchers´ Menu</h1>
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2021-05-08">
+                            May 8, 2021
+                    </time>
+                </span>
+                <span class="post-meta-item post-meta-length">
+                    2 min read
+                </span>
+                    <span class="post-meta-item post-meta-tags">
+                        <a class="post-tag post-tag-react-native" href="../tag/react-native/index.html"
+                                title="React-Native">React-Native</a><a class="post-tag post-tag-app" href="../tag/app/index.html"
+                                title="App">App</a><a class="post-tag post-tag-webapp" href="../tag/webapp/index.html"
+                                title="Webapp">Webapp</a>
+                    </span>
+            </div>
+</header>                    <figure class="post-media container large">
+        <div class="u-placeholder horizontal">
+            <a class="post-image-link" href="index.html">
+                <img class="post-image lazyload u-object-fit"
+
+                    data-srcset="/content/images/size/w400/2021/08/Screenshot-2021-08-26-161503-1.png 400w, /content/images/size/w750/2021/08/Screenshot-2021-08-26-161503-1.png 750w, /content/images/size/w960/2021/08/Screenshot-2021-08-26-161503-1.png 960w, /content/images/size/w1140/2021/08/Screenshot-2021-08-26-161503-1.png 1140w, /content/images/size/w1920/2021/08/Screenshot-2021-08-26-161503-1.png 1920w"
+                    data-sizes="auto" src="../content/images/size/w960/2021/08/Screenshot-2021-08-26-161503-1.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     alt="Project: Local Butchers´ Menu">
+            </a>
+        </div>
+
+    </figure>
+                <div class="post-content kg-canvas u-text-format">
+                    <p>So as most of you during the Pandemic, studying or working from home, I and especially my neighbors struggled with eating a healthy meal every day, since they were used to the canteen at work and hadn't had the time to cook each day.</p><figure class="kg-card kg-image-card"><img src="https://images.unsplash.com/photo-1585331505473-7586f9cb0854?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fHBhbmRlbWljfGVufDB8fHx8MTYyOTk4NTY3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=2000" class="kg-image" alt loading="lazy"></figure><p><br><br>About two months in, a friend told me that the local butchers have a daily menu, so I tried it and it was great. But there was a problem, some meals for example had intestines in them, which some people dislike, but there are four butchers in the region, what if there was a place, which had an overview of all of their menus?<br>What if...</p><figure class="kg-card kg-embed-card"><iframe width="200" height="113" src="https://www.youtube.com/embed/LVemc7ur0TU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure><p></p><hr><p><strong>Note:</strong> The About Menu had to be reworked, it was only a proof-of-concept.</p><hr><p>The Idea: Scrape each website every Saturday evening for next week's menu, this is more or less Mcgyvert with airtable and google sheets, and show the results in a responsive app/webapp.<br><br><strong>Note: I didn't want to use a single cent to realize this Idea</strong></p><p><strong>The Backend, just tables with information:</strong></p><figure class="kg-card kg-image-card"><img src="../content/images/2021/08/Screenshot-2021-08-26-162529.png" class="kg-image" alt loading="lazy" width="1944" height="322" srcset="../content/images/size/w600/2021/08/Screenshot-2021-08-26-162529.png 600w, ../content/images/size/w1000/2021/08/Screenshot-2021-08-26-162529.png 1000w, ../content/images/size/w1600/2021/08/Screenshot-2021-08-26-162529.png 1600w, ../content/images/2021/08/Screenshot-2021-08-26-162529.png 1944w" sizes="(min-width: 720px) 720px"></figure><p><br><strong>I developed the front end in React-native, via the Expo platform:</strong></p><figure class="kg-card kg-image-card"><img src="../content/images/2021/08/Screenshot-2021-08-26-161503.png" class="kg-image" alt loading="lazy" width="2000" height="1404" srcset="../content/images/size/w600/2021/08/Screenshot-2021-08-26-161503.png 600w, ../content/images/size/w1000/2021/08/Screenshot-2021-08-26-161503.png 1000w, ../content/images/size/w1600/2021/08/Screenshot-2021-08-26-161503.png 1600w, ../content/images/2021/08/Screenshot-2021-08-26-161503.png 2119w" sizes="(min-width: 720px) 720px"></figure><figure class="kg-card kg-image-card"><img src="../content/images/2021/08/Screenshot-2021-08-26-161529.png" class="kg-image" alt loading="lazy" width="2000" height="1406" srcset="../content/images/size/w600/2021/08/Screenshot-2021-08-26-161529.png 600w, ../content/images/size/w1000/2021/08/Screenshot-2021-08-26-161529.png 1000w, ../content/images/size/w1600/2021/08/Screenshot-2021-08-26-161529.png 1600w, ../content/images/2021/08/Screenshot-2021-08-26-161529.png 2143w" sizes="(min-width: 720px) 720px"></figure><p>This being my first app project, I was quite surprised how fast and easy the development with expo is since you can see every change within 5 seconds.</p><p><strong>Conclusion:</strong></p><p>Now, about five months later I would have done a whole lot different, the scraping was a contender for the definition of Spaghetticode, and since I didn't really know Git back then, especially gitignore,the API keys are still all over the app, that's the reason why the code is not public on Github yet. But if someone wants it, just hmu.<br><br>Why it's not in the App/Playstore right now you may ask?<br>Well, at first only one butcher had their menu as a pdf, when I was done 3/4 used a pdf and since scraping a pdf is a whole lot more difficult, than a simple webpage, I more or less had abandoned the project.</p>
+                </div>
+                <div class="container medium">
+                    <div class="share u-hover-wrapper">
+    <a class="share-item share-facebook u-hover-item"
+        href="https://www.facebook.com/sharer.php?u=https://joes-blog-and-projects.ghost.io/project-local-butchers-menu/" target="_blank" rel="noopener"><i
+            class="icon icon-facebook"></i></a>
+    <a class="share-item share-twitter u-hover-item"
+        href="https://twitter.com/intent/tweet?url=https://joes-blog-and-projects.ghost.io/project-local-butchers-menu/&text=Project%3A%20Local%20Butchers%C2%B4%20Menu" target="_blank" rel="noopener"><i
+            class="icon icon-twitter"></i></a>
+    <a class="share-item share-pinterest u-hover-item"
+        href="https://pinterest.com/pin/create/button/?url=https://joes-blog-and-projects.ghost.io/project-local-butchers-menu/&media=&description=Project%3A%20Local%20Butchers%C2%B4%20Menu"
+        target="_blank" rel="noopener" data-pin-do="none"><i class="icon icon-pinterest"></i></a>
+    <a class="share-item share-linkedin u-hover-item"
+        href="https://www.linkedin.com/shareArticle?mini=true&url=https://joes-blog-and-projects.ghost.io/project-local-butchers-menu/&title=Project%3A%20Local%20Butchers%C2%B4%20Menu"
+        target="_blank" rel="noopener"><i class="icon icon-linkedin"></i></a>
+    <a class="share-item share-reddit u-hover-item"
+        href="https://reddit.com/submit?url=https://joes-blog-and-projects.ghost.io/project-local-butchers-menu/&title=Project%3A%20Local%20Butchers%C2%B4%20Menu" target="_blank" rel="noopener"><i
+            class="icon icon-reddit"></i></a>
+    <a class="share-item share-tumblr u-hover-item"
+        href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://joes-blog-and-projects.ghost.io/project-local-butchers-menu/&title=Project%3A%20Local%20Butchers%C2%B4%20Menu"
+        target="_blank" rel="noopener"><i class="icon icon-tumblr"></i></a>
+    <a class="share-item share-vk u-hover-item"
+        href="http://vk.com/share.php?url=https://joes-blog-and-projects.ghost.io/project-local-butchers-menu/&title=Project%3A%20Local%20Butchers%C2%B4%20Menu" target="_blank" rel="noopener"><i
+            class="icon icon-vk"></i></a>
+    <a class="share-item share-pocket u-hover-item" href="https://getpocket.com/edit?url=https://joes-blog-and-projects.ghost.io/project-local-butchers-menu/"
+        target="_blank" rel="noopener"><i class="icon icon-pocket"></i></a>
+    <a class="share-item share-telegram u-hover-item"
+        href="https://t.me/share/url?url=https://joes-blog-and-projects.ghost.io/project-local-butchers-menu/&text=Project%3A%20Local%20Butchers%C2%B4%20Menu" target="_blank" rel="noopener"><i
+            class="icon icon-telegram"></i></a>
+</div>                        <section class="author">
+        <div class="author-image-placeholder u-placeholder">
+            <img class="author-image lazyload u-object-fit"
+                data-srcset="/content/images/size/w150/2021/08/IMG-20200704-WA0000-1.jpg"
+                src="../content/images/size/w150/2021/08/IMG-20200704-WA0000-1.jpg"
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="Johannes v. Grundherr">
+        </div>
+        <div class="author-wrapper">
+            <header class="author-header">
+                <div class="author-header-wrapper">
+                    <h4 class="author-name">Johannes v. Grundherr</h4>
+                    <div class="author-social">
+                        <a class="author-social-item author-more"
+                            href="../author/johannes/index.html">More posts</a>
+                    </div>
+                </div>
+            </header>
+            <div class="author-bio">Electrical Engineering Student @ FAU
+</div>
+                <div class="author-location">
+                    <i class="author-location-icon icon icon-map-marker"></i>
+                    Erlangen, Germany
+                </div>
+        </div>
+    </section>
+                </div>
+            </article>
+            <div class="navigation container medium">
+
+        <div class="navigation-item navigation-next">
+            <a class="navigation-item-link button-arrow button-arrow-right" href="../project-nixie-clock/index.html">
+                Next Post <i class="button-arrow-icon icon icon-arrow-right"></i>
+            </a>
+        </div>
+</div>                            </main>
+</div>
+        </div>
+        <footer class="site-footer container large">
+    <div class="copyright">
+        Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+    </div>
+
+    <a class="logo" href="../index.html">
+        <img class="logo-image" src="../content/images/2021/08/android-chrome-512x512-3.png" alt="Joe´s Blog and Projects">
+</a>
+    <div class="footer-social">
+        <a class="footer-social-item footer-social-item-rss"
+            href="https://feedly.com/i/subscription/feed/https://joes-blog-and-projects.ghost.io/rss/" target="_blank" rel="noopener"
+            aria-label="RSS">
+            <i class="icon icon-rss"></i>
+        </a>
+    </div>
+</footer>    </div>
+
+    <div class="dimmer"></div>
+
+    <div class="off-canvas">
+        <div class="canvas-close">
+            <i class="canvas-icon icon icon-window-close"></i>
+        </div>
+        <div class="mobile-menu"></div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
+    <script src="../assets/built/main.min.js%3Fv=ed4f07f1c9"></script>
+
+    
+
+    
+</body>
+
+</html>
