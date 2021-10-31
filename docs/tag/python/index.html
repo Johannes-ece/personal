@@ -8,7 +8,7 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="../../assets/built/screen.css@v=700aaaccee.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/built/screen.css@v=7ec81f45a8.css" />
 
     <link rel="icon" href="../../favicon.png" type="image/png" />
     <link rel="canonical" href="index.html" />
@@ -50,7 +50,7 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 4.13" />
+    <meta name="generator" content="Ghost 4.21" />
     <link rel="alternate" type="application/rss+xml" title="Joe´s Blog and Projects" href="../../rss/index.html" />
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -62,7 +62,17 @@
   gtag('js', new Date());
 
   gtag('config', 'G-CC28QPYKJ9');
-</script><style>:root {--ghost-accent-color: #2699a1;}</style>
+</script>
+<style>
+/* Removes Header Button */
+.gh-head-button {
+    display: none!important;
+}
+/* Removes Footer CTA Section */
+.footer-cta {
+    display: none;
+}
+</style><style>:root {--ghost-accent-color: #2699a1;}</style>
 
 </head>
 <body class="tag-template tag-python">
@@ -97,10 +107,10 @@
         </nav>
     </header>
 
-    <main>
+    <div class="site-content">
         
 
-<section class="outer">
+<main id="site-main" class="site-main outer">
     <div class="inner posts">
         <div class="post-feed">
 
@@ -145,9 +155,9 @@
                     <div class="post-card-primary-tag">python</div>
                 <h2 class="post-card-title">Algorithmic Trading in Python</h2>
             </header>
-            <section class="post-card-excerpt">
+            <div class="post-card-excerpt">
                 <p>One of Charlie Munger´s,  vice chairman of Berkshire Hathaway,  best-known quotes is: “The big money is not in the buying or selling, but in the waiting”, but is this actually the case? It's a story as old as time, the average hedge fund can't consistently beat the broad index</p>
-            </section>
+            </div>
         </a>
 
         <footer class="post-card-meta">
@@ -160,7 +170,7 @@
             </ul>
             <div class="post-card-byline-content">
                 <span><a href="../../author/johannes/index.html">Johannes v. Grundherr</a></span>
-                <span class="post-card-byline-date"><time datetime="2021-08-26">Aug 26, 2021</time> <span class="bull">&bull;</span> 4 min read</span>
+                <span class="post-card-byline-date"><time datetime="2021-08-26">Aug 26, 2021</time> <span class="bull">&bull;</span> 3 min read</span>
             </div>
         </footer>
 
@@ -171,9 +181,9 @@
 
         </div>
     </div>
-</section>
+</main>
 
-    </main>
+    </div>
 
     <footer class="site-footer outer">
         <div class="inner">
@@ -193,7 +203,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous">
 </script>
-<script src="../../assets/built/casper.js@v=700aaaccee"></script>
+<script src="../../assets/built/casper.js@v=7ec81f45a8"></script>
 <script>
 $(document).ready(function () {
     // Mobile Menu Trigger

@@ -8,7 +8,7 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="assets/built/screen.css@v=700aaaccee.css" />
+    <link rel="stylesheet" type="text/css" href="assets/built/screen.css@v=7ec81f45a8.css" />
 
     <meta name="description" content="Projects, stories and ideas." />
     <link rel="icon" href="favicon.png" type="image/png" />
@@ -59,7 +59,7 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 4.13" />
+    <meta name="generator" content="Ghost 4.21" />
     <link rel="alternate" type="application/rss+xml" title="Joe´s Blog and Projects" href="rss/index.html" />
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -71,7 +71,17 @@
   gtag('js', new Date());
 
   gtag('config', 'G-CC28QPYKJ9');
-</script><style>:root {--ghost-accent-color: #2699a1;}</style>
+</script>
+<style>
+/* Removes Header Button */
+.gh-head-button {
+    display: none!important;
+}
+/* Removes Footer CTA Section */
+.footer-cta {
+    display: none;
+}
+</style><style>:root {--ghost-accent-color: #2699a1;}</style>
 
 </head>
 <body class="home-template">
@@ -97,11 +107,16 @@
 </ul>
 
             </div>
-            
+            <div class="gh-head-actions">
+                <div class="gh-social">
+                </div>
+
+                    <a class="gh-head-button" href="index.html#/portal/signup">Subscribe</a>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <div class="site-content">
         
 <div class="site-header-content">
         <img class="site-header-cover"
@@ -147,9 +162,9 @@
                     <div class="post-card-primary-tag">C++</div>
                 <h2 class="post-card-title">Monitoring the air</h2>
             </header>
-            <section class="post-card-excerpt">
-                <p>Indoor air quality - you probably never taught about this, but it's just as, if not more important then outdoor air quality, since most people spend more then half of their day indoors. So how is the air? Quick Note: You can find this projects code and documentation on Github!</p>
-            </section>
+            <div class="post-card-excerpt">
+                <p>Indoor air quality - you probably never taught about this, but it's just as, if not more important than outdoor air quality, since most people spend more than half of their day indoors. So how is the air? Quick Note: You can find this projects code and documentation on Github!</p>
+            </div>
         </a>
 
         <footer class="post-card-meta">
@@ -194,9 +209,9 @@
                     <div class="post-card-primary-tag">python</div>
                 <h2 class="post-card-title">Algorithmic Trading in Python</h2>
             </header>
-            <section class="post-card-excerpt">
+            <div class="post-card-excerpt">
                 <p>One of Charlie Munger´s,  vice chairman of Berkshire Hathaway,  best-known quotes is: “The big money is not in the buying or selling, but in the waiting”, but is this actually the case? It's a story as old as time, the average hedge fund can't consistently beat the broad index</p>
-            </section>
+            </div>
         </a>
 
         <footer class="post-card-meta">
@@ -209,7 +224,7 @@
             </ul>
             <div class="post-card-byline-content">
                 <span><a href="author/johannes/index.html">Johannes v. Grundherr</a></span>
-                <span class="post-card-byline-date"><time datetime="2021-08-26">Aug 26, 2021</time> <span class="bull">&bull;</span> 4 min read</span>
+                <span class="post-card-byline-date"><time datetime="2021-08-26">Aug 26, 2021</time> <span class="bull">&bull;</span> 3 min read</span>
             </div>
         </footer>
 
@@ -229,7 +244,7 @@
                     https://images.unsplash.com/photo-1562791241-122a7c501434?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDN8fG5peGllJTIwdHViZXxlbnwwfHx8fDE2Mjk5OTM5MTU&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
             sizes="(max-width: 1000px) 400px, 800px"
             src="https://images.unsplash.com/photo-1562791241-122a7c501434?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDN8fG5peGllJTIwdHViZXxlbnwwfHx8fDE2Mjk5OTM5MTU&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
-            alt="Project: Nixie clock"
+            alt="Nixie clock"
             loading="lazy"
         />
     </a>
@@ -239,11 +254,11 @@
         <a class="post-card-content-link" href="project-nixie-clock/index.html">
             <header class="post-card-header">
                     <div class="post-card-primary-tag">Nixie</div>
-                <h2 class="post-card-title">Project: Nixie clock</h2>
+                <h2 class="post-card-title">Nixie clock</h2>
             </header>
-            <section class="post-card-excerpt">
-                <p>One might know them from the bomb-defusing scene in the Bond movie "Goldfinger" or the Divergence Meter from Steins;Gate. In short, its ten(0-9) wires glowing neon yellow in a vacuum tube, first replaced by seven-segment displays, they are becoming more and more popular nowadays, because of their beauty.</p>
-            </section>
+            <div class="post-card-excerpt">
+                <p>One might know them from the bomb-defusing scene in the Bond movie "Goldfinger" or the Divergence Meter from Steins;Gate. In short, its ten(0-9) wires glowing neon yellow in a vacuum tube, first replaced by seven-segment displays, they are becoming increasingly popular nowadays, because of their beauty.  There are</p>
+            </div>
         </a>
 
         <footer class="post-card-meta">
@@ -276,7 +291,7 @@
                  content/images/size/w2000/2021/09/Screenshot-2021-08-26-161503-1-1.png 2000w"
             sizes="(max-width: 1000px) 400px, 800px"
             src="content/images/size/w600/2021/09/Screenshot-2021-08-26-161503-1-1.png"
-            alt="Project: Local Butchers´ Menu"
+            alt="Local Butchers´ Menu"
             loading="lazy"
         />
     </a>
@@ -286,11 +301,11 @@
         <a class="post-card-content-link" href="project-local-butchers-menu/index.html">
             <header class="post-card-header">
                     <div class="post-card-primary-tag">React-Native</div>
-                <h2 class="post-card-title">Project: Local Butchers´ Menu</h2>
+                <h2 class="post-card-title">Local Butchers´ Menu</h2>
             </header>
-            <section class="post-card-excerpt">
+            <div class="post-card-excerpt">
                 <p>So as most of you during the Pandemic, studying or working from home, I and especially my neighbors struggled with eating a healthy meal every day, since they were used to the canteen at work and hadn't had the time to cook each day.</p>
-            </section>
+            </div>
         </a>
 
         <footer class="post-card-meta">
@@ -316,7 +331,7 @@
     </div>
 </main>
 
-    </main>
+    </div>
 
     <footer class="site-footer outer">
         <div class="inner">
@@ -336,7 +351,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous">
 </script>
-<script src="assets/built/casper.js@v=700aaaccee"></script>
+<script src="assets/built/casper.js@v=7ec81f45a8"></script>
 <script>
 $(document).ready(function () {
     // Mobile Menu Trigger

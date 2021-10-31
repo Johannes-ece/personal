@@ -8,7 +8,7 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css@v=700aaaccee.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css@v=7ec81f45a8.css" />
 
     <link rel="icon" href="../favicon.png" type="image/png" />
     <link rel="canonical" href="index.html" />
@@ -71,7 +71,7 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 4.13" />
+    <meta name="generator" content="Ghost 4.21" />
     <link rel="alternate" type="application/rss+xml" title="Joe´s Blog and Projects" href="../rss/index.html" />
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -83,7 +83,17 @@
   gtag('js', new Date());
 
   gtag('config', 'G-CC28QPYKJ9');
-</script><style>:root {--ghost-accent-color: #2699a1;}</style>
+</script>
+<style>
+/* Removes Header Button */
+.gh-head-button {
+    display: none!important;
+}
+/* Removes Footer CTA Section */
+.footer-cta {
+    display: none;
+}
+</style><style>:root {--ghost-accent-color: #2699a1;}</style>
 
 </head>
 <body class="page-template page-about">
@@ -111,32 +121,37 @@
             </div>
             <div class="gh-head-actions">
                 <div class="gh-social">
-               
+                </div>
+
+                    <a class="gh-head-button" href="index.html#/portal/signup">Subscribe</a>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <div class="site-content">
         
 
 
 
-<article class="article post no-image page">
+<main id="site-main" class="site-main">
+    <article class="article post no-image page">
 
-    <header class="article-header gh-canvas">
-    </header>
+        <header class="article-header gh-canvas">
+        </header>
 
-    <section class="gh-content gh-canvas">
+        <section class="gh-content gh-canvas">
 
-        <h1 class="article-title">About the site and me</h1>
+            <h1 class="article-title">About the site and me</h1>
 
-        <figure class="kg-card kg-image-card"><img src="../content/images/2021/09/IMG-20200704-WA0000-1.jpg" class="kg-image" alt loading="lazy" width="768" height="1024" srcset="../content/images/size/w600/2021/09/IMG-20200704-WA0000-1.jpg 600w, ../content/images/2021/09/IMG-20200704-WA0000-1.jpg 768w" sizes="(min-width: 720px) 720px"></figure><p>My name is Johannes v. Grundherrm I am an electriacl engineering student at FAU in the 2-3 Semester.</p><p>This is just a little Blog for showcasing my Projects and displaying my ideas.<br>If you want to contact me, write me at j.grundherr@pm.me<br></p>
+            <figure class="kg-card kg-image-card"><img src="../content/images/2021/09/IMG-20200704-WA0000-1.jpg" class="kg-image" alt loading="lazy" width="768" height="1024" srcset="../content/images/size/w600/2021/09/IMG-20200704-WA0000-1.jpg 600w, ../content/images/2021/09/IMG-20200704-WA0000-1.jpg 768w" sizes="(min-width: 720px) 720px"></figure><p>My name is Johannes v. Grundherrm I am an electriacl engineering student at FAU in the 2-3 Semester.</p><p>This is just a little Blog for showcasing my Projects and displaying my ideas.<br>If you want to contact me, write me at j.grundherr@pm.me<br></p>
 
-    </section>
+        </section>
 
-</article>
+    </article>
+</main>
 
 
-    </main>
+    </div>
 
     <footer class="site-footer outer">
         <div class="inner">
@@ -156,7 +171,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous">
 </script>
-<script src="../assets/built/casper.js@v=700aaaccee"></script>
+<script src="../assets/built/casper.js@v=7ec81f45a8"></script>
 <script>
 $(document).ready(function () {
     // Mobile Menu Trigger

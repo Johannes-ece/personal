@@ -8,7 +8,7 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css@v=700aaaccee.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css@v=7ec81f45a8.css" />
 
     <link rel="icon" href="../favicon.png" type="image/png" />
     <link rel="canonical" href="index.html" />
@@ -18,11 +18,11 @@
     <meta property="og:site_name" content="Joe´s Blog and Projects" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Monitoring the air" />
-    <meta property="og:description" content="Indoor air quality - you probably never taught about this, but it&#x27;s just as, if not more important then outdoor air quality, since most people spend more then half of their day indoors. So how is the air? Quick Note: You can find this projects code and documentation on Github!" />
+    <meta property="og:description" content="Indoor air quality - you probably never taught about this, but it&#x27;s just as, if not more important than outdoor air quality, since most people spend more than half of their day indoors. So how is the air? Quick Note: You can find this projects code and documentation on Github!" />
     <meta property="og:url" content="http://localhost:2368/monitoring-the-air/" />
     <meta property="og:image" content="http://localhost:2368/content/images/2021/10/Screenshot-2021-10-22-164454.png" />
     <meta property="article:published_time" content="2021-10-22T17:20:00.000Z" />
-    <meta property="article:modified_time" content="2021-10-22T18:20:03.000Z" />
+    <meta property="article:modified_time" content="2021-10-31T13:58:01.000Z" />
     <meta property="article:tag" content="C++" />
     <meta property="article:tag" content="ESP32" />
     <meta property="article:tag" content="Geiger" />
@@ -34,7 +34,7 @@
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Monitoring the air" />
-    <meta name="twitter:description" content="Indoor air quality - you probably never taught about this, but it&#x27;s just as, if not more important then outdoor air quality, since most people spend more then half of their day indoors. So how is the air? Quick Note: You can find this projects code and documentation on Github!" />
+    <meta name="twitter:description" content="Indoor air quality - you probably never taught about this, but it&#x27;s just as, if not more important than outdoor air quality, since most people spend more than half of their day indoors. So how is the air? Quick Note: You can find this projects code and documentation on Github!" />
     <meta name="twitter:url" content="http://localhost:2368/monitoring-the-air/" />
     <meta name="twitter:image" content="http://localhost:2368/content/images/2021/10/Screenshot-2021-10-22-164454.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -74,7 +74,7 @@
     "headline": "Monitoring the air",
     "url": "http://localhost:2368/monitoring-the-air/",
     "datePublished": "2021-10-22T17:20:00.000Z",
-    "dateModified": "2021-10-22T18:20:03.000Z",
+    "dateModified": "2021-10-31T13:58:01.000Z",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:2368/content/images/2021/10/Screenshot-2021-10-22-164454.png",
@@ -82,7 +82,7 @@
         "height": 498
     },
     "keywords": "C++, ESP32, Geiger, Radon, CO2, PM10, PM1, PM2.5",
-    "description": "Indoor air quality - you probably never taught about this, but it&#x27;s just as, if\nnot more important then outdoor air quality, since most people spend more then\nhalf of their day indoors. So how is the air?\n\n\n--------------------------------------------------------------------------------\n\nQuick Note: You can find this projects code and documentation on Github\n[https://github.com/Johannes-ece/AirQ]!\n\n\n--------------------------------------------------------------------------------\n\nWell, lets quan",
+    "description": "Indoor air quality - you probably never taught about this, but it&#x27;s just as, if\nnot more important than outdoor air quality, since most people spend more than\nhalf of their day indoors. So how is the air?\n\n\n--------------------------------------------------------------------------------\n\nQuick Note: You can find this projects code and documentation on Github\n[https://github.com/Johannes-ece/AirQ]!\n\n\n--------------------------------------------------------------------------------\n\nWell, lets quan",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://localhost:2368/"
@@ -90,7 +90,7 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 4.13" />
+    <meta name="generator" content="Ghost 4.21" />
     <link rel="alternate" type="application/rss+xml" title="Joe´s Blog and Projects" href="../rss/index.html" />
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -102,7 +102,17 @@
   gtag('js', new Date());
 
   gtag('config', 'G-CC28QPYKJ9');
-</script><style>:root {--ghost-accent-color: #2699a1;}</style>
+</script>
+<style>
+/* Removes Header Button */
+.gh-head-button {
+    display: none!important;
+}
+/* Removes Footer CTA Section */
+.footer-cta {
+    display: none;
+}
+</style><style>:root {--ghost-accent-color: #2699a1;}</style>
 
 </head>
 <body class="post-template tag-c tag-esp32 tag-geiger tag-radon tag-co2 tag-pm10 tag-pm1 tag-pm2-5">
@@ -128,65 +138,81 @@
 </ul>
 
             </div>
-            
+            <div class="gh-head-actions">
+                <div class="gh-social">
+                </div>
+
+                    <a class="gh-head-button" href="index.html#/portal/signup">Subscribe</a>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <div class="site-content">
         
 
 
 
-<article class="article post tag-c tag-esp32 tag-geiger tag-radon tag-co2 tag-pm10 tag-pm1 tag-pm2-5">
+<main id="site-main" class="site-main">
+    <article class="article post tag-c tag-esp32 tag-geiger tag-radon tag-co2 tag-pm10 tag-pm1 tag-pm2-5">
 
-    <header class="article-header gh-canvas">
+        <header class="article-header gh-canvas">
 
-        <section class="article-tag">
-            <a href="../tag/c/index.html">C++</a>
+            <section class="article-tag">
+                <a href="../tag/c/index.html">C++</a>
+            </section>
+
+            <h1 class="article-title">Monitoring the air</h1>
+
+
+            <div class="article-byline">
+                <section class="article-byline-content">
+                    <ul class="author-list">
+                        <li class="author-list-item">
+                            <a href="../author/johannes/index.html" class="author-avatar">
+                                <img class="author-profile-image" src="../content/images/size/w100/2021/09/IMG-20200704-WA0000.jpg" alt="Johannes v. Grundherr" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="article-byline-meta">
+                        <h4 class="author-name"><a href="../author/johannes/index.html">Johannes v. Grundherr</a></h4>
+                        <div class="byline-meta-content">
+                            <time class="byline-meta-date" datetime="2021-10-22">Oct 22, 2021</time>
+                            <span class="byline-reading-time"><span class="bull">&bull;</span> 4 min read</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <figure class="article-image">
+                <img
+                    srcset="../content/images/size/w300/2021/10/Screenshot-2021-10-22-164454.png 300w,
+                           ../content/images/size/w600/2021/10/Screenshot-2021-10-22-164454.png 600w,
+                          ../content/images/size/w1000/2021/10/Screenshot-2021-10-22-164454.png 1000w,
+                         ../content/images/size/w2000/2021/10/Screenshot-2021-10-22-164454.png 2000w"
+                    sizes="(min-width: 1400px) 1400px, 92vw"
+                    src="../content/images/size/w2000/2021/10/Screenshot-2021-10-22-164454.png"
+                    alt="Monitoring the air"
+                />
+            </figure>
+        </header>
+
+        <section class="gh-content gh-canvas">
+            <p>Indoor air quality - you probably never taught about this, but it's just as, if not more important than outdoor air quality, since most people spend more than half of their day indoors. So how is the air?</p><hr><p>Quick Note: You can find this projects code and documentation on <a href="https://github.com/Johannes-ece/AirQ">Github</a>!</p><hr><p><strong>Well, lets quantify it: </strong>CO2 is the most important short-term indicator, its measured in ppm parts-per-million. If the level is too high you can't concentrate at first and then get dizzy and sleepy:</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="../content/images/2021/10/co2-ppm-table-759x800.png" class="kg-image" alt loading="lazy" width="759" height="800" srcset="../content/images/size/w600/2021/10/co2-ppm-table-759x800.png 600w, ../content/images/2021/10/co2-ppm-table-759x800.png 759w" sizes="(min-width: 720px) 720px"><figcaption>https://www.iqhome.org/image/cache/catalog/blog/air_quality/co2-ppm-table-759x800.png</figcaption></figure><p><strong>So how can we test it?</strong></p><p>With a sensor of course, we will be using the MH-Z19C, it has a range from 400-500ppm so the above chart fits perfectly in it.</p><figure class="kg-card kg-image-card"><img src="../content/images/2021/10/PXL_20211002_094851908.jpg" class="kg-image" alt loading="lazy" width="2000" height="2667" srcset="../content/images/size/w600/2021/10/PXL_20211002_094851908.jpg 600w, ../content/images/size/w1000/2021/10/PXL_20211002_094851908.jpg 1000w, ../content/images/size/w1600/2021/10/PXL_20211002_094851908.jpg 1600w, ../content/images/size/w2400/2021/10/PXL_20211002_094851908.jpg 2400w" sizes="(min-width: 720px) 720px"></figure><hr><p>Fine particles are not that important in the short term, but in the long term, it can have serious impacts on your health, its measured in particles per 0.1l of air:</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="../content/images/2021/10/pm_levels.png" class="kg-image" alt loading="lazy" width="1351" height="414" srcset="../content/images/size/w600/2021/10/pm_levels.png 600w, ../content/images/size/w1000/2021/10/pm_levels.png 1000w, ../content/images/2021/10/pm_levels.png 1351w" sizes="(min-width: 720px) 720px"><figcaption>https://www.airveda.com/resources/images/pm_levels.png</figcaption></figure><p>To sense these particles we are using the PMSA003 from Plantower:</p><figure class="kg-card kg-image-card"><img src="../content/images/2021/10/PXL_20211002_094929328.jpg" class="kg-image" alt loading="lazy" width="2000" height="2667" srcset="../content/images/size/w600/2021/10/PXL_20211002_094929328.jpg 600w, ../content/images/size/w1000/2021/10/PXL_20211002_094929328.jpg 1000w, ../content/images/size/w1600/2021/10/PXL_20211002_094929328.jpg 1600w, ../content/images/size/w2400/2021/10/PXL_20211002_094929328.jpg 2400w" sizes="(min-width: 720px) 720px"></figure><hr><p>The last major Indicator I want to use and which is a bit unusual is radioactivity, having the very harmful Radon-gas in mind.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="../content/images/2021/10/Radonkarte-BfS.jpg" class="kg-image" alt loading="lazy" width="1600" height="2200" srcset="../content/images/size/w600/2021/10/Radonkarte-BfS.jpg 600w, ../content/images/size/w1000/2021/10/Radonkarte-BfS.jpg 1000w, ../content/images/2021/10/Radonkarte-BfS.jpg 1600w" sizes="(min-width: 720px) 720px"><figcaption>https://www.fs-ev.org/fileadmin/user_upload/97_Service/Radonvorsorge/Radonkarte-BfS.jpg</figcaption></figure><p><br>Two major obstacles lie in detecting Radon, it comes up in waves as decayed Uran from under the house and it only emits alpha rays. </p><p>If you are panicking right now while reading this, it should only concern you if you live in an older house which might have a porous foundation and you live in one of the red areas. For me it's both.</p><p><strong><br>Why is detecting alpha radiation a Problem?</strong></p><p>It's undetectable by a traditional <a href="https://en.wikipedia.org/wiki/Geiger%E2%80%93M%C3%BCller_tube">Geiger-Müller</a> tube, only with quite complicated systems, the modern one being optical recognition of "impacts" on a cmos-sensor.<br>So how do we detect radon? Well, we don't, we detect the gamma rays from the lead and bismuth:</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2021/10/Zerfall-1--1--1.png" width="800" height="320" loading="lazy" alt srcset="../content/images/size/w600/2021/10/Zerfall-1--1--1.png 600w, ../content/images/2021/10/Zerfall-1--1--1.png 800w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2021/10/PXL_20211002_095044269.jpg" width="2000" height="1500" loading="lazy" alt srcset="../content/images/size/w600/2021/10/PXL_20211002_095044269.jpg 600w, ../content/images/size/w1000/2021/10/PXL_20211002_095044269.jpg 1000w, ../content/images/size/w1600/2021/10/PXL_20211002_095044269.jpg 1600w, ../content/images/size/w2400/2021/10/PXL_20211002_095044269.jpg 2400w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p><br>Since a Geiger-Müller Tube works only with very high voltages, mine takes 403V, the circuit is somewhat complicated, its partly inspired form the <a href="https://github.com/ecocurious2/MultiGeiger">Multigeiger </a>project on GitHub:</p><figure class="kg-card kg-image-card kg-width-wide"><img src="../content/images/2021/10/Schematic_Airq.svg" class="kg-image" alt loading="lazy" width="4049" height="2869"></figure><p>In short, we generate short pulses from the micro-controller(<a href="https://www.espressif.com/en/products/socs/esp32-s3">esp32</a>), which generates very high voltages from the coil(<a href="https://www.britannica.com/science/Lenzs-law">Lenz's law</a>). Stopping when the cap is charged. Then, once a gamma ray goes through the tube and making it inductive, the capacitor discharges for a microsecond which we detect.</p><p><strong>That's basically it</strong>, the two sensors I wrote about earlier both use serial communication, the "simple" environmental sensor on the bottom right uses I2C.<br>For future expansion I added four more additional I2C headers, since you never know you need them until you do...</p><hr><p><strong>The PCB:</strong></p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2021/10/top.svg" width="378" height="378" loading="lazy" alt></div><div class="kg-gallery-image"><img src="../content/images/2021/10/bottom.svg" width="378" height="378" loading="lazy" alt></div></div></div></figure><figure class="kg-card kg-image-card"><img src="../content/images/2021/10/IMG_2021-10-02-11-47-23-075.jpg" class="kg-image" alt loading="lazy" width="2000" height="2667" srcset="../content/images/size/w600/2021/10/IMG_2021-10-02-11-47-23-075.jpg 600w, ../content/images/size/w1000/2021/10/IMG_2021-10-02-11-47-23-075.jpg 1000w, ../content/images/size/w1600/2021/10/IMG_2021-10-02-11-47-23-075.jpg 1600w, ../content/images/size/w2400/2021/10/IMG_2021-10-02-11-47-23-075.jpg 2400w" sizes="(min-width: 720px) 720px"></figure><p>Beautiful, isn't it?</p><p>In retrospect I made three mistakes when designing it, cap C3 and the CO2 Sensor have the wrong footprints and I bought the wrong esp32, which is not pin-compatible to the one I planned for. So please forgive all the jumpers:</p><figure class="kg-card kg-image-card"><img src="../content/images/2021/10/PXL_20211022_170653265.jpg" class="kg-image" alt loading="lazy" width="2000" height="1500" srcset="../content/images/size/w600/2021/10/PXL_20211022_170653265.jpg 600w, ../content/images/size/w1000/2021/10/PXL_20211022_170653265.jpg 1000w, ../content/images/size/w1600/2021/10/PXL_20211022_170653265.jpg 1600w, ../content/images/2021/10/PXL_20211022_170653265.jpg 2096w" sizes="(min-width: 720px) 720px"></figure><p><strong>So how does the software work?</strong></p><p>I already explained how the tube is driven, apart from that the esp32 just collects the sensors data and sends it off to my mqtt broker.</p><p>Since the "backend" is somewhat complicated I can only forward you too Andreas Spiess's perfect explanation of it: <a href="https://www.youtube.com/watch?v=JdV4x925au0">https://www.youtube.com/watch?v=JdV4x925au0</a></p><hr><p>You can find the Arduino sketch in this projects <a href="https://github.com/Johannes-ece/AirQ/blob/main/airq.ino">Github</a>.</p><hr><p><strong>Analyzing the data:</strong><br>Since we are using <a href="https://en.wikipedia.org/wiki/MQTT">mqtt</a> and InfluxDB, we can easily plot the data with the popular graphing tool Grafana:</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2021/10/Screenshot-2021-10-22-191755.png" width="1842" height="1361" loading="lazy" alt srcset="../content/images/size/w600/2021/10/Screenshot-2021-10-22-191755.png 600w, ../content/images/size/w1000/2021/10/Screenshot-2021-10-22-191755.png 1000w, ../content/images/size/w1600/2021/10/Screenshot-2021-10-22-191755.png 1600w, ../content/images/2021/10/Screenshot-2021-10-22-191755.png 1842w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2021/10/Screenshot-2021-10-22-191717.png" width="1842" height="501" loading="lazy" alt srcset="../content/images/size/w600/2021/10/Screenshot-2021-10-22-191717.png 600w, ../content/images/size/w1000/2021/10/Screenshot-2021-10-22-191717.png 1000w, ../content/images/size/w1600/2021/10/Screenshot-2021-10-22-191717.png 1600w, ../content/images/2021/10/Screenshot-2021-10-22-191717.png 1842w" sizes="(min-width: 720px) 720px"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2021/10/Screenshot-2021-10-22-191626.png" width="1836" height="451" loading="lazy" alt srcset="../content/images/size/w600/2021/10/Screenshot-2021-10-22-191626.png 600w, ../content/images/size/w1000/2021/10/Screenshot-2021-10-22-191626.png 1000w, ../content/images/size/w1600/2021/10/Screenshot-2021-10-22-191626.png 1600w, ../content/images/2021/10/Screenshot-2021-10-22-191626.png 1836w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2021/10/Screenshot-2021-10-22-191609.png" width="2000" height="862" loading="lazy" alt srcset="../content/images/size/w600/2021/10/Screenshot-2021-10-22-191609.png 600w, ../content/images/size/w1000/2021/10/Screenshot-2021-10-22-191609.png 1000w, ../content/images/size/w1600/2021/10/Screenshot-2021-10-22-191609.png 1600w, ../content/images/size/w2400/2021/10/Screenshot-2021-10-22-191609.png 2400w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>On the top left you can see the impact of mowing the lawn on the fine particles sensor about 10m from the rooms window, but still perfectly healthy levels.<br><br>On the top right you can see CO2 chart of me writing this and occasionally opening the window for 30 seconds.<br><br>Down left is the gamma-ray chart in micro Sievert, which show us the typical background radiation, no sign of radon so far, phewwww...</p><hr><p><strong>Conclusion:</strong></p><p>Apart from putting my, lung-cancer-fearing heart at ease, I learned quite a lot about the components that define our air quality, be it co2 or ionizing radiation.<br>The pcb order was a bit rushed, causing a few mistakes to slip through, but it was only ever intended as a prototype, so if it works, it work.<br></p><p>On the software/hardware side I am quite astonished how much a 5$ ESP32 can do, quite a lot cheaper than an Arduino, yet so much more powerful.<br>I will definitely use it in future projects, like monitoring the soil moisture of my plants wirelessly or using it with a camera a long distance lorawan module to monitor local wildlife.</p>
         </section>
 
-        <h1 class="article-title">Monitoring the air</h1>
 
+    </article>
+</main>
 
-        <div class="article-byline">
-            <section class="article-byline-content">
-                <ul class="author-list">
-                    <li class="author-list-item">
-                        <a href="../author/johannes/index.html" class="author-avatar">
-                            <img class="author-profile-image" src="../content/images/size/w100/2021/09/IMG-20200704-WA0000.jpg" alt="Johannes v. Grundherr" />
-                        </a>
-                    </li>
-                </ul>
-                <div class="article-byline-meta">
-                    <h4 class="author-name"><a href="../author/johannes/index.html">Johannes v. Grundherr</a></h4>
-                    <div class="byline-meta-content">
-                        <time class="byline-meta-date" datetime="2021-10-22">Oct 22, 2021</time>
-                        <span class="byline-reading-time"><span class="bull">&bull;</span> 4 min read</span>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <figure class="article-image">
-            <img
-                srcset="../content/images/size/w300/2021/10/Screenshot-2021-10-22-164454.png 300w,
-                       ../content/images/size/w600/2021/10/Screenshot-2021-10-22-164454.png 600w,
-                      ../content/images/size/w1000/2021/10/Screenshot-2021-10-22-164454.png 1000w,
-                     ../content/images/size/w2000/2021/10/Screenshot-2021-10-22-164454.png 2000w"
-                sizes="(min-width: 1400px) 1400px, 92vw"
-                src="../content/images/size/w2000/2021/10/Screenshot-2021-10-22-164454.png"
-                alt="Monitoring the air"
-            />
-        </figure>
-    </header>
-
-    <section class="gh-content gh-canvas">
-        <p>Indoor air quality - you probably never taught about this, but it's just as, if not more important then outdoor air quality, since most people spend more then half of their day indoors. So how is the air?</p><hr><p>Quick Note: You can find this projects code and documentation on <a href="https://github.com/Johannes-ece/AirQ">Github</a>!</p><hr><p><strong>Well, lets quantify it: </strong>CO2 is the most important short term indicator, its measured in ppm parts-per-million. If the level is too high you can't concentrate at first and then get dizzy and sleepy:</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="../content/images/2021/10/co2-ppm-table-759x800.png" class="kg-image" alt loading="lazy" width="759" height="800" srcset="../content/images/size/w600/2021/10/co2-ppm-table-759x800.png 600w, ../content/images/2021/10/co2-ppm-table-759x800.png 759w" sizes="(min-width: 720px) 720px"><figcaption>https://www.iqhome.org/image/cache/catalog/blog/air_quality/co2-ppm-table-759x800.png</figcaption></figure><p><strong>So how can we test it?</strong></p><p>With a sensor of course, we will be using the MH-Z19C, it has a range from 400-500ppm so the above chart fits perfectly in it.</p><figure class="kg-card kg-image-card"><img src="../content/images/2021/10/PXL_20211002_094851908.jpg" class="kg-image" alt loading="lazy" width="2000" height="2667" srcset="../content/images/size/w600/2021/10/PXL_20211002_094851908.jpg 600w, ../content/images/size/w1000/2021/10/PXL_20211002_094851908.jpg 1000w, ../content/images/size/w1600/2021/10/PXL_20211002_094851908.jpg 1600w, ../content/images/size/w2400/2021/10/PXL_20211002_094851908.jpg 2400w" sizes="(min-width: 720px) 720px"></figure><hr><p>Fine particles are not that important in the short term, but in the long term, it can have serious impacts on your health, its measured in particles per 0.1l of air:</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="../content/images/2021/10/pm_levels.png" class="kg-image" alt loading="lazy" width="1351" height="414" srcset="../content/images/size/w600/2021/10/pm_levels.png 600w, ../content/images/size/w1000/2021/10/pm_levels.png 1000w, ../content/images/2021/10/pm_levels.png 1351w" sizes="(min-width: 720px) 720px"><figcaption>https://www.airveda.com/resources/images/pm_levels.png</figcaption></figure><p>To sense these particles we are using the PMSA003 from Plantower:</p><figure class="kg-card kg-image-card"><img src="../content/images/2021/10/PXL_20211002_094929328.jpg" class="kg-image" alt loading="lazy" width="2000" height="2667" srcset="../content/images/size/w600/2021/10/PXL_20211002_094929328.jpg 600w, ../content/images/size/w1000/2021/10/PXL_20211002_094929328.jpg 1000w, ../content/images/size/w1600/2021/10/PXL_20211002_094929328.jpg 1600w, ../content/images/size/w2400/2021/10/PXL_20211002_094929328.jpg 2400w" sizes="(min-width: 720px) 720px"></figure><hr><p>The last major Indicator I want to use and which is probably a bit unusual is radioactivity, having the very harmful Radon-gas in mind.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="../content/images/2021/10/Radonkarte-BfS.jpg" class="kg-image" alt loading="lazy" width="1600" height="2200" srcset="../content/images/size/w600/2021/10/Radonkarte-BfS.jpg 600w, ../content/images/size/w1000/2021/10/Radonkarte-BfS.jpg 1000w, ../content/images/2021/10/Radonkarte-BfS.jpg 1600w" sizes="(min-width: 720px) 720px"><figcaption>https://www.fs-ev.org/fileadmin/user_upload/97_Service/Radonvorsorge/Radonkarte-BfS.jpg</figcaption></figure><p><br>Two major obstacle lie in detecting Radon, it comes up in waves as decayed Uran from under the house and it only emits alpha rays. </p><p>If you are panicking right now while reading this, it should only concern you if you live in an older house which might have a porous foundation and you live in one of the red areas. For me its both.</p><p><strong><br>Why is detecting alpha radiation a Problem?</strong></p><p>Its undetectable by a traditional <a href="https://en.wikipedia.org/wiki/Geiger%E2%80%93M%C3%BCller_tube">Geiger-Müller</a> tube, only with quite complicated systems, the modern one being optical recognition of "impacts" on a cmos-sensor.<br>So how do we detect Radon? Well, we don't, we detect the gamma rays from the lead and bismuth:</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2021/10/Zerfall-1--1--1.png" width="800" height="320" loading="lazy" alt srcset="../content/images/size/w600/2021/10/Zerfall-1--1--1.png 600w, ../content/images/2021/10/Zerfall-1--1--1.png 800w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2021/10/PXL_20211002_095044269.jpg" width="2000" height="1500" loading="lazy" alt srcset="../content/images/size/w600/2021/10/PXL_20211002_095044269.jpg 600w, ../content/images/size/w1000/2021/10/PXL_20211002_095044269.jpg 1000w, ../content/images/size/w1600/2021/10/PXL_20211002_095044269.jpg 1600w, ../content/images/size/w2400/2021/10/PXL_20211002_095044269.jpg 2400w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p><br>Since a Geiger-Müller Tube works only with very high voltages, mine takes 403V,<br>the circuit is somewhat complicated, its partly inspired form the <a href="https://github.com/ecocurious2/MultiGeiger">Multigeiger </a>project on Github:</p><figure class="kg-card kg-image-card kg-width-wide"><img src="../content/images/2021/10/Schematic_Airq.svg" class="kg-image" alt loading="lazy" width="4049" height="2869"></figure><p>In short, we generate short pulses from the micro-controller(<a href="https://www.espressif.com/en/products/socs/esp32-s3">esp32</a>), which generates very high voltages from the coil(<a href="https://www.britannica.com/science/Lenzs-law">Lenz's law</a>). Stopping when the cap is charged. Then, once a gamma ray goes through the tube and making it inductive, the capacitor discharges for a micro second which we detect.</p><p><strong>That's basically it</strong>, the two sensors I wrote about earlier both use serial communication, the "simple" environmental sensor on the bottom right uses I2C.<br>For future expansion I added four more additional I2C headers, since you never know you need them until you do...</p><hr><p><strong>The PCB:</strong></p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2021/10/top.svg" width="378" height="378" loading="lazy" alt></div><div class="kg-gallery-image"><img src="../content/images/2021/10/bottom.svg" width="378" height="378" loading="lazy" alt></div></div></div></figure><figure class="kg-card kg-image-card"><img src="../content/images/2021/10/IMG_2021-10-02-11-47-23-075.jpg" class="kg-image" alt loading="lazy" width="2000" height="2667" srcset="../content/images/size/w600/2021/10/IMG_2021-10-02-11-47-23-075.jpg 600w, ../content/images/size/w1000/2021/10/IMG_2021-10-02-11-47-23-075.jpg 1000w, ../content/images/size/w1600/2021/10/IMG_2021-10-02-11-47-23-075.jpg 1600w, ../content/images/size/w2400/2021/10/IMG_2021-10-02-11-47-23-075.jpg 2400w" sizes="(min-width: 720px) 720px"></figure><p>Beautiful, isn't it?</p><p>In retrospect I made three mistakes when designing it, cap C3 and the CO2 Sensor have the wrong footprints and I bought the wrong esp32, which is not pin-compatible to the one I planned for. So please forgive all the jumpers:</p><figure class="kg-card kg-image-card"><img src="../content/images/2021/10/PXL_20211022_170653265.jpg" class="kg-image" alt loading="lazy" width="2000" height="1500" srcset="../content/images/size/w600/2021/10/PXL_20211022_170653265.jpg 600w, ../content/images/size/w1000/2021/10/PXL_20211022_170653265.jpg 1000w, ../content/images/size/w1600/2021/10/PXL_20211022_170653265.jpg 1600w, ../content/images/2021/10/PXL_20211022_170653265.jpg 2096w" sizes="(min-width: 720px) 720px"></figure><p><strong>So how does the software work?</strong></p><p>I already explained how the tube is driven, apart from that the esp32 just collects the sensors data and sends it off to my mqtt broker.</p><p>Since the "backend" is somewhat complicated I can only forward you too Andreas Spiess's perfect explanation of it: <a href="https://www.youtube.com/watch?v=JdV4x925au0">https://www.youtube.com/watch?v=JdV4x925au0</a></p><hr><p>You can find the Arduino sketch in this projects <a href="https://github.com/Johannes-ece/AirQ/blob/main/airq.ino">Github</a>.</p><hr><p><strong>Analysing the data:</strong><br>Since we are using <a href="https://en.wikipedia.org/wiki/MQTT">mqtt</a> and InfluxDB, we can easily plot the data with the popular graphing tool Grafana:</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2021/10/Screenshot-2021-10-22-191755.png" width="1842" height="1361" loading="lazy" alt srcset="../content/images/size/w600/2021/10/Screenshot-2021-10-22-191755.png 600w, ../content/images/size/w1000/2021/10/Screenshot-2021-10-22-191755.png 1000w, ../content/images/size/w1600/2021/10/Screenshot-2021-10-22-191755.png 1600w, ../content/images/2021/10/Screenshot-2021-10-22-191755.png 1842w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2021/10/Screenshot-2021-10-22-191717.png" width="1842" height="501" loading="lazy" alt srcset="../content/images/size/w600/2021/10/Screenshot-2021-10-22-191717.png 600w, ../content/images/size/w1000/2021/10/Screenshot-2021-10-22-191717.png 1000w, ../content/images/size/w1600/2021/10/Screenshot-2021-10-22-191717.png 1600w, ../content/images/2021/10/Screenshot-2021-10-22-191717.png 1842w" sizes="(min-width: 720px) 720px"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2021/10/Screenshot-2021-10-22-191626.png" width="1836" height="451" loading="lazy" alt srcset="../content/images/size/w600/2021/10/Screenshot-2021-10-22-191626.png 600w, ../content/images/size/w1000/2021/10/Screenshot-2021-10-22-191626.png 1000w, ../content/images/size/w1600/2021/10/Screenshot-2021-10-22-191626.png 1600w, ../content/images/2021/10/Screenshot-2021-10-22-191626.png 1836w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2021/10/Screenshot-2021-10-22-191609.png" width="2000" height="862" loading="lazy" alt srcset="../content/images/size/w600/2021/10/Screenshot-2021-10-22-191609.png 600w, ../content/images/size/w1000/2021/10/Screenshot-2021-10-22-191609.png 1000w, ../content/images/size/w1600/2021/10/Screenshot-2021-10-22-191609.png 1600w, ../content/images/size/w2400/2021/10/Screenshot-2021-10-22-191609.png 2400w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>On the top left you can see the impact of mowing the lawn on the fine particles sensor about 10m from the rooms window, but still perfectly healthy levels.<br><br>On the top right you can see CO2 chart of me writing this and every once in a while opening the window for 20s.<br><br>Down left is the gamma-ray chart in micro Sievert, which show us the typical background radiation, no sign of radon so far, phewwww...</p><hr><p><strong>Conclusion:</strong></p><p>Apart from putting my, lung-cancer-fearing heart at ease, I learned quite a lot about the components that define our air quality, be it co2 or ionizing radiation.<br>The pcb order was a bit rushed, causing a few mistakes to slip through, but it was only ever intended as a prototype, so if it works, it work.<br></p><p>On the software/hardware side I am quite astonished how much a 5$ ESP32 can do, quite a lot cheaper than an Arduino, yet so much more powerful.<br>I will definitely use it in future projects, like monitoring the soil moisture of my plants wirelessly or using it with a camera a long distance lorawan module to monitor local wildlife.</p>
-    </section>
-
-
-</article>
-
+<section class="footer-cta">
+    <div class="inner">
+        <h2>Sign up for more like this.</h2>
+        <a class="footer-cta-button" href="index.html#/portal">
+            <div>Enter your email</div>
+            <span>Subscribe</span>
+        </a>
+    </div>
+</section>
 
 
 <aside class="read-more-wrap">
@@ -215,9 +241,9 @@
             <header class="post-card-header">
                 <h2 class="post-card-title">Algorithmic Trading in Python</h2>
             </header>
-            <section class="post-card-excerpt">
+            <div class="post-card-excerpt">
                 <p>One of Charlie Munger´s,  vice chairman of Berkshire Hathaway,  best-known quotes is: “The big money is not in the buying or selling, but in the waiting”, but is this actually the case? It's a story as old as time, the average hedge fund can't consistently beat the broad index</p>
-            </section>
+            </div>
         </a>
 
         <footer class="post-card-meta">
@@ -230,7 +256,7 @@
             </ul>
             <div class="post-card-byline-content">
                 <span><a href="../author/johannes/index.html">Johannes v. Grundherr</a></span>
-                <span class="post-card-byline-date"><time datetime="2021-08-26">Aug 26, 2021</time> <span class="bull">&bull;</span> 4 min read</span>
+                <span class="post-card-byline-date"><time datetime="2021-08-26">Aug 26, 2021</time> <span class="bull">&bull;</span> 3 min read</span>
             </div>
         </footer>
 
@@ -248,7 +274,7 @@
                     https://images.unsplash.com/photo-1562791241-122a7c501434?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDN8fG5peGllJTIwdHViZXxlbnwwfHx8fDE2Mjk5OTM5MTU&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000 2000w"
             sizes="(max-width: 1000px) 400px, 800px"
             src="https://images.unsplash.com/photo-1562791241-122a7c501434?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDN8fG5peGllJTIwdHViZXxlbnwwfHx8fDE2Mjk5OTM5MTU&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
-            alt="Project: Nixie clock"
+            alt="Nixie clock"
             loading="lazy"
         />
     </a>
@@ -257,11 +283,11 @@
 
         <a class="post-card-content-link" href="../project-nixie-clock/index.html">
             <header class="post-card-header">
-                <h2 class="post-card-title">Project: Nixie clock</h2>
+                <h2 class="post-card-title">Nixie clock</h2>
             </header>
-            <section class="post-card-excerpt">
-                <p>One might know them from the bomb-defusing scene in the Bond movie "Goldfinger" or the Divergence Meter from Steins;Gate. In short, its ten(0-9) wires glowing neon yellow in a vacuum tube, first replaced by seven-segment displays, they are becoming more and more popular nowadays, because of their beauty.</p>
-            </section>
+            <div class="post-card-excerpt">
+                <p>One might know them from the bomb-defusing scene in the Bond movie "Goldfinger" or the Divergence Meter from Steins;Gate. In short, its ten(0-9) wires glowing neon yellow in a vacuum tube, first replaced by seven-segment displays, they are becoming increasingly popular nowadays, because of their beauty.  There are</p>
+            </div>
         </a>
 
         <footer class="post-card-meta">
@@ -292,7 +318,7 @@
                  ../content/images/size/w2000/2021/09/Screenshot-2021-08-26-161503-1-1.png 2000w"
             sizes="(max-width: 1000px) 400px, 800px"
             src="../content/images/size/w600/2021/09/Screenshot-2021-08-26-161503-1-1.png"
-            alt="Project: Local Butchers´ Menu"
+            alt="Local Butchers´ Menu"
             loading="lazy"
         />
     </a>
@@ -301,11 +327,11 @@
 
         <a class="post-card-content-link" href="../project-local-butchers-menu/index.html">
             <header class="post-card-header">
-                <h2 class="post-card-title">Project: Local Butchers´ Menu</h2>
+                <h2 class="post-card-title">Local Butchers´ Menu</h2>
             </header>
-            <section class="post-card-excerpt">
+            <div class="post-card-excerpt">
                 <p>So as most of you during the Pandemic, studying or working from home, I and especially my neighbors struggled with eating a healthy meal every day, since they were used to the canteen at work and hadn't had the time to cook each day.</p>
-            </section>
+            </div>
         </a>
 
         <footer class="post-card-meta">
@@ -330,7 +356,7 @@
 </aside>
 
 
-    </main>
+    </div>
 
     <footer class="site-footer outer">
         <div class="inner">
@@ -350,7 +376,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous">
 </script>
-<script src="../assets/built/casper.js@v=700aaaccee"></script>
+<script src="../assets/built/casper.js@v=7ec81f45a8"></script>
 <script>
 $(document).ready(function () {
     // Mobile Menu Trigger
